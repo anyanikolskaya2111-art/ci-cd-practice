@@ -1,4 +1,4 @@
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, power
 
 def test_add():
     assert add(2, 3) == 5
@@ -20,3 +20,8 @@ def test_divide():
     assert divide(9, 3) == 3
     assert divide(5, 0) is None
     assert divide(100, 4) == 25
+
+def test_power():
+    assert power(2, 3) == 8
+    assert power(5, 0) == 1
+    assert power(2, 4) == 16
